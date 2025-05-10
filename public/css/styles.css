@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
 
 :root {
-  --primary-clr: #F79B72;
+  --primary-clr: #853c1d;
   --secondary-clr: #2A4759;
   --accent-clr: #DDDDDD;
   --primary-font: "Raleway";
@@ -94,7 +94,6 @@ nav li {
 
 nav li:hover {
   background-color: var(--primary-clr);
-  color: var(--secondary-clr);
 }
 
 main {
