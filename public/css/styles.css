@@ -165,7 +165,6 @@ footer {
 }
 
 .specs .cards {
-  width: 20rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -209,4 +208,47 @@ footer {
 
 .reviews ul li {
   padding-bottom: 1rem;
+}
+
+@media (max-width: 964px) {
+  .hero-img {
+    width: 25rem;
+  }
+
+  .hero .card-info {
+    width: 10rem;
+    margin-top: 20px;
+  }
+
+  .card-info h2{
+    font-size: 1.3rem;
+    
+  }
+
+  .card-info button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .card-info p {
+    font-size: 0.8rem;
+  }
+
+  .specs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .specs .cards {
+    justify-content: center;
+  }
+
+  .specs h2 {
+    text-align: center;
+  }
+
+  .reviews ul li {
+    text-align: center;
+  }
 }
