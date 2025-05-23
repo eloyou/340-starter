@@ -29,10 +29,14 @@ a {
 }
 
 img {
-  display:block;
+  display: block;
   max-width: 100%;
   height: auto;
   border: 0;
+  box-shadow: none;
+  outline: none;
+
+
 
 }
 
@@ -210,6 +214,13 @@ footer {
 .reviews ul li {
   padding-bottom: 1rem;
 }
+
+#inv-display {
+  list-style: none;
+
+}
+
+
 
 @media (max-width: 964px) {
   .hero-img {
