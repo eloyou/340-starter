@@ -54,11 +54,35 @@ Util.buildClassificationGrid = async function(data){
   return grid
 }
 
+Util.buildInventoryGrid = async function(data) {
+  let card
+  card = `
+    <div class="card-vehicle">
+      <div class="left-side">
+        <img height="500" width="500" loading="lazy" src="${data.inv_image}" alt="${data.inv_make}">
+      </div>
+      <div class="right-side">
+        <p class="name">${data.inv_model + " "+ data.inv_make} Details</p>
+        <p class="price">Price: $${data.inv_price}</p>
+        <p class="description">Description: ${data.inv_description}</p>
+        <p class="color">Color: ${data.inv_color}</p>
+        <p class="miles">Miles: ${data.inv_miles}</p>
+        
+      </div>
+    </div>
+  `
+
+  return card
+  
+}
+
 /* ****************************************
  * Middleware For Handling Errors
  * Wrap other function in this for 
  * General Error Handling
  **************************************** */
 Util.handleErrors = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next)
+
+
 
 module.exports = Util
